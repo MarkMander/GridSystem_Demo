@@ -27,6 +27,7 @@ public class EnemyUnit : MonoBehaviour
         health -= dmg;
         if (health <= 0)
         {
+            Debug.Log("Enemy has been Destoryed");
             Destroy(gameObject);
         }
     }
